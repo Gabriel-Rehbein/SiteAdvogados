@@ -1,0 +1,108 @@
+/* responsive.css */
+
+@media (max-width: 1024px) {
+  .sobre,
+  .servicos,
+  .pagina-escritorio .mvv,
+  .pagina-servicos .lista-servicos,
+  .pagina-profissionais .equipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre .texto,
+  .sobre .imagem,
+  .pagina-escritorio .mvv div,
+  .pagina-servicos .servico-box,
+  .pagina-profissionais .perfil,
+  .formulario-contato {
+    flex: 1 1 100%;
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    font-size: 1.4rem;
+  }
+
+  .pagina-escritorio .intro h1,
+  .pagina-servicos .intro h1,
+  .pagina-profissionais .intro h1,
+  .pagina-contato .intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .pagina-escritorio .intro p,
+  .pagina-escritorio .historia p,
+  .pagina-servicos .intro p,
+  .pagina-profissionais .intro p,
+  .pagina-contato .intro p {
+    font-size: 1rem;
+  }
+
+  footer .contato {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pagina-escritorio .intro,
+  .pagina-escritorio .historia,
+  .pagina-servicos .intro,
+  .pagina-servicos .lista-servicos,
+  .pagina-profissionais .intro,
+  .pagina-profissionais .equipe,
+  .pagina-contato .intro,
+  .formulario-contato {
+    padding: 1.5rem 1rem;
+  }
+
+  .pagina-escritorio .mvv div,
+  .pagina-servicos .servico-box,
+  .pagina-profissionais .perfil {
+    padding: 1rem;
+  }
+
+  .formulario-contato button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  footer .contato {
+    border-radius: 1rem;
+  }
+}
