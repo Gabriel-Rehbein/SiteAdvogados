@@ -73,3 +73,50 @@ body {
   animation: fadeInText 1s ease forwards;
   animation-delay: 1s;
 }
+
+/* Animação ao passar o mouse nos botões */
+button,
+button[type="submit"],
+.formulario-contato button {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+button[type="submit"]:hover,
+.formulario-contato button:hover {
+  transform: scale(1.05);
+  background-color: #800000; /* vinho escuro */
+  box-shadow: 0 0 10px rgba(128, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* Links com efeito de transição */
+nav ul li a,
+footer .contato a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover,
+footer .contato a:hover {
+  color: #800000;
+  transform: scale(1.05);
+}
+
+/* Card hover */
+.card,
+.perfil,
+.servico-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.perfil:hover,
+.servico-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens do carrossel com fade */
+#imagemEscritorio {
+  transition: opacity 0.5s ease;
+}

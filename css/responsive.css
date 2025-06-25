@@ -151,3 +151,22 @@
     border-radius: 1rem;
   }
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container-sobre {
+    flex-direction: column;
+  }
+
+  .imagem-rotativa img {
+    max-width: 100%;
+  }
+
+  .seta.esquerda {
+    left: 10px;
+  }
+
+  .seta.direita {
+    right: 10px;
+  }
+}
