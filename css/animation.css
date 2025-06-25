@@ -33,9 +33,10 @@ body {
 }
 
 /* Logo com pulse sutil */
-.logo {
+/*.logo {
   animation: pulse 3s infinite ease-in-out;
 }
+  */
 
 @keyframes pulse {
   0%, 100% {

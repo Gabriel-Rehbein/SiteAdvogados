@@ -1,16 +1,11 @@
-// script.js
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("Site do escritório de advocacia carregado!");
-  // Aqui você pode colocar interações JS futuras
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   const imagem = document.getElementById('imagemEscritorio');
   const imagens = [
     'Image/Firma/predio.png',
     'Image/Firma/porta.png',
-    'Image/Firma/pordentro.png'
+    'Image/Firma/salapordentro.png'
   ];
   let index = 0;
   let intervalo;
@@ -53,4 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   iniciarAutoPlay();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  if (menuToggle && navbar) {
+    menuToggle.addEventListener("click", function () {
+      navbar.classList.toggle("show");
+    });
+  }
 });
