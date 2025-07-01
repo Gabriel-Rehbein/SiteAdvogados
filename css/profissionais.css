@@ -118,16 +118,12 @@ nav ul li a.ativo {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: var(--preto);
   color: var(--branco);
   text-align: center;
   padding: 2rem 1rem;
   border-top: 6px solid var(--vinho);
-  z-index: 1000;
+  margin-top: auto;
 }
 
 footer .contato {

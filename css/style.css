@@ -290,3 +290,20 @@ footer .contato {
     flex-direction: column;
   }
 }
+
+.servico-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.servico-texto {
+  flex: 1;
+}
+
+.servico-imagem img {
+  max-width: 200px;
+  border-radius: 8px;
+}

@@ -118,16 +118,12 @@ nav ul li a.ativo {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: var(--preto);
   color: var(--branco);
   text-align: center;
   padding: 2rem 1rem;
   border-top: 6px solid var(--vinho);
-  z-index: 1000;
+  margin-top: auto;
 }
 
 footer .contato {
@@ -242,4 +238,21 @@ footer .contato {
 .pagina-servicos .servico-box h3 {
   color: var(--vinho);
   margin-bottom: 0.5rem;
+}
+
+.servico-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.servico-texto {
+  flex: 1;
+}
+
+.servico-imagem img {
+  max-width: 200px;
+  border-radius: 8px;
 }
